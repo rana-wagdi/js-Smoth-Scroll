@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.navbar.scroll{
+    background: #1abc9c;
+}
+.navbar.scrolla{
+    color:#fff;
+}
+.navbar.scroll a.active{
+    color: #000 ;
+    border-bottom: 2px solid #000;
+}
+.navbarLogo{
+    color: yellowgreen;
+}
+.navbarList{
+    list-style: none;
+}
+.navbarItem{
+    display: inline-block;
+}
+.navbarLink{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+.mainContent{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContent:nth-of-type(2){
+    background-color: #1abc9c;
+}
+.mainContent:nth-of-type(3){
+    background-color: #1abc9c;
+}
+
+@media only screen and (max-width:900px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbarLogo{
+        padding: 1rem;
+    }
+    .navbarLink{
+        padding: .5rem;
+    }
+    .main{
+
+    }
+    .mainContent{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainContent:nth-of-type(2){
+        background-color: #1abc9c;
+    }
+} 
+
