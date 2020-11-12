@@ -7,7 +7,7 @@ window.addEventListener('scroll',event =>{
 
 //active navigation on scroll
 window.addEventListener('scroll',event =>{
-    let navigationLinks=document.querySelectorAll('nav ul li a');
+    let navigationLinks=document.querySelectorAll('.navbarLink');
     let fromTop=window.scrollY;
 
     navigationLinks.forEach(link =>{
